@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <header class="header"></header>
+    <!-- <header class="header"></header> -->
     <nuxt />
-    <footer class="footer"></footer>
+    <!-- <footer class="footer"></footer> -->
   </div>
 </template>
 
@@ -15,18 +15,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main {
-  display: flex;
-  flex-direction: column;
-}
-.header {
-  width: 100vw;
-  height: 50px;
-  background: #fff;
-}
+// .main {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .header {
+//   width: 100vw;
+//   height: 50px;
+//   background: #fff;
+// }
 
-.footer {
-  height: 50px;
-  background: red;
-}
+// .footer {
+//   height: 50px;
+//   background: red;
+// }
 </style>

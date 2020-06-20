@@ -42,5 +42,6 @@
   background-color: #ffcd28;
   border-radius: 10px;
   font-size: 17px;
+  cursor: pointer;
 }
 </style>

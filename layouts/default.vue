@@ -1,8 +1,6 @@
 <template>
   <div class="main">
-    <header class="header">
-      <h1 class="header__title">SNS的なやつ(仮)</h1>
-    </header>
+    <Header />
     <div class="header-padding" />
     <nuxt />
     <!-- <footer class="footer"></footer> -->
@@ -10,9 +8,14 @@
 </template>
 
 <script>
+import Header from "@/components/layout/Header.vue";
+
 export default {
   data() {
     return {};
+  },
+  components: {
+    Header
   }
 };
 </script>

@@ -1,16 +1,19 @@
 <template>
   <div class="entire">
     <sidebar />
-    <div class="main"></div>
+    <!-- <div class="main"></div> -->
+    <tweet-screen />
   </div>
 </template>
 
 <script>
 import Sidebar from "@/components/layout/Sidebar.vue";
+import TweetScreen from "@/components/layout/TweetScreen.vue";
 
 export default {
   components: {
-    Sidebar
+    Sidebar,
+    TweetScreen
   }
 };
 </script>

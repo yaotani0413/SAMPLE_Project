@@ -18,7 +18,7 @@
 
 .newpost-title {
   margin-bottom: 50px;
-  color: #FFCD28;
+  color: #ffcd28;
   font-weight: bold;
   font-size: 60px;
 }
@@ -26,14 +26,14 @@
 .newpost-message {
   height: 300px;
   width: 600px;
-  text-align: center;
+  padding: 24px;
   border-radius: 50px;
   margin-bottom: 50px;
   font-size: 17px;
 }
 
 .btn {
-  background-color: #FFCD28;
+  background-color: #ffcd28;
   height: 45px;
   width: 150px;
   border-radius: 10px;

@@ -11,9 +11,6 @@
 </template>
 
 <style lang="scss" scoped>
-.main {
-  flex: 1;
-}
 
 .tweet-container {
   background-color: rgba(255,255,255,0.5);
@@ -34,7 +31,7 @@
 }
 
 .other {
-  flex: 1;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -49,7 +46,7 @@
 }
 
 .tweet {
-  flex: 1;
+  height: 70%;
   background-color: white;
   border-radius: 15px;
   margin: 5px;

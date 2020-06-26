@@ -1,8 +1,7 @@
 <template>
   <div class="entire">
     <sidebar />
-    <!-- <div class="main"></div> -->
-    <tweet-screen />
+    <tweet-screen class="tweet-screen"/>
   </div>
 </template>
 
@@ -24,5 +23,9 @@ export default {
   width: 100vw;
   height: calc(100vh - 100px);
   background-color: #242424;
+}
+
+.tweet-screen {
+  flex: 1;
 }
 </style>

@@ -2,9 +2,20 @@
   <div class="signin-box">
     <input type="email" class="mail" placeholder="メールアドレス" />
     <input type="password" class="pass" placeholder="パスワード" />
-    <button class="signin">サインイン</button>
+    <button type="button" class="signin" @click="goTimeline">サインイン</button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goTimeline() {
+      this.$router.push('/tweets')
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .signin-box {
   height: 100vh;

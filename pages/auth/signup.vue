@@ -3,9 +3,19 @@
     <input type="text" class="name" placeholder="ニックネーム">
     <input type="email" class="mail" placeholder="メールアドレス">
     <input type="password" class="pass" placeholder="パスワード">
-    <button type="button" class="signup">サインアップ</button>
+    <button type="button" class="signup" @click="goTimeline">サインアップ</button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goTimeline() {
+      this.$router.push('/tweets')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .signup-box {

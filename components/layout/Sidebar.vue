@@ -1,10 +1,26 @@
 <template>
   <nav class="sidebar">
-    <button type="button" class="menu-button">プロフィール編集</button>
-    <button type="button" class="menu-button">新規投稿</button>
-    <button type="button" class="menu-button">ログアウト</button>
+    <button type="button" class="menu-button" @click="goProfile">プロフィール編集</button>
+    <button type="button" class="menu-button" @click="goNewpost">新規投稿</button>
+    <button type="button" class="menu-button" @click="returnTop">ログアウト</button>
   </nav>
 </template>
+
+<script>
+export default {
+  methods: {
+    goProfile() {
+      this.$router.push('/user/profile')
+    },
+    goNewpost() {
+      this.$router.push('/tweets/new')
+    },
+    returnTop() {
+      this.$router.push('/')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .sidebar {

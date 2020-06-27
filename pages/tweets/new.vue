@@ -2,9 +2,19 @@
   <div class="newpost">
     <p class="newpost-title">新規投稿</p>
     <textarea class="newpost-message" placeholder="メッセージを入力" cols="10" rows="5"></textarea>
-    <button type="button" class="btn">投稿</button>
+    <button type="button" class="btn" @click="goTimeline">投稿</button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goTimeline() {
+      this.$router.push('/tweets')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .newpost {

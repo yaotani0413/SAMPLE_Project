@@ -1,16 +1,18 @@
 <template>
   <div class="entire">
     <sidebar />
-    <div class="main"></div>
+    <tweet-screen class="tweet-screen"/>
   </div>
 </template>
 
 <script>
 import Sidebar from "@/components/layout/Sidebar.vue";
+import TweetScreen from "@/components/layout/TweetScreen.vue";
 
 export default {
   components: {
-    Sidebar
+    Sidebar,
+    TweetScreen
   }
 };
 </script>
@@ -21,5 +23,9 @@ export default {
   width: 100vw;
   height: calc(100vh - 100px);
   background-color: #242424;
+}
+
+.tweet-screen {
+  flex: 1;
 }
 </style>

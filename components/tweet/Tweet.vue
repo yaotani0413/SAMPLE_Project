@@ -1,19 +1,37 @@
 <template>
-  <div class="main">
-    <div class="tweet-container">
-      <div class="thumbnail">写真</div>
-      <div class="other">
-        <div class="user-name">やおたに</div>
-        <div class="tweet">テスト投稿いたしました。</div>
-      </div>
+  <div class="tweet-container">
+    <figure class="thumbnail">
+      <img :src="imageUrl" alt="サムネイル" />
+    </figure>
+    <div class="other">
+      <div class="user-name">{{ name }}</div>
+      <div class="tweet">{{ text }}</div>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<script>
+export default {
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    text: {
+      type: String,
+      required: true
+    },
+    imageUrl: {
+      type: String,
+      required: true
+    }
+  }
+};
+</script>
 
+<style lang="scss" scoped>
 .tweet-container {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 100px;
   width: 700px;
   margin: 20px;

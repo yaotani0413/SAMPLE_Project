@@ -7,7 +7,7 @@
 
 <script>
 import Sidebar from "@/components/layout/Sidebar.vue";
-import TweetScreen from "@/components/layout/TweetScreen.vue";
+import TweetScreen from "@/components/tweet/TweetScreen.vue";
 
 export default {
   components: {

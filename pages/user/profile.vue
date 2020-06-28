@@ -4,9 +4,19 @@
     <input type="text" class="name" placeholder="ニックネーム">
     <input type="email" class="mail" placeholder="メールアドレス">
     <input type="password" class="pass" placeholder="パスワード">
-    <button type="button" class="update">更新</button>
+    <button type="button" class="update" @click="goTimeline">更新</button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goTimeline() {
+      this.$router.push('/tweets')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .profile-box {

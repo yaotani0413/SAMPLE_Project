@@ -20,10 +20,11 @@ export default {
 .signin-box {
   height: 100vh;
   width: 100vw;
-  background-color: #242424;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  top: 102px;
 }
 
 .mail {
@@ -36,6 +37,10 @@ export default {
   font-size: 17px;
 }
 
+.mail:focus {
+  outline: none;
+}
+
 .pass {
   height: 50px;
   width: 600px;
@@ -44,6 +49,10 @@ export default {
   margin-bottom: 25px;
   border-radius: 10px;
   font-size: 17px;
+}
+
+.pass:focus {
+  outline: none;
 }
 
 .signin {
@@ -55,4 +64,13 @@ export default {
   font-size: 17px;
   cursor: pointer;
 }
+
+.signin:focus {
+  outline: none;
+}
+
+.signin:hover {
+  opacity: 0.8;
+}
+
 </style>

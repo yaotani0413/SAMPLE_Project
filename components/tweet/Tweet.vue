@@ -1,7 +1,7 @@
 <template>
   <div class="tweet-container">
     <figure class="thumbnail">
-      <img :src="imageUrl" alt="サムネイル" />
+      <img :src="imageUrl" alt="サムネイル" class="image"/>
     </figure>
     <div class="other">
       <div class="user-name">{{ name }}</div>
@@ -46,6 +46,15 @@ export default {
   background-color: white;
   border-radius: 50%;
   text-align: center;
+  padding: 5px;
+}
+
+.image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .other {

@@ -22,38 +22,66 @@ export default {
       tweets: [
         {
           id: 1,
-          name: "ただ たけひろ",
+          name: "たなか たろう",
           text: "晩御飯食べたい",
           image_url:
-            "https://1.bp.blogspot.com/-jlZlCg-8FAM/Xub_u8HTD1I/AAAAAAABZis/ZhUI05AZBEQpVinedZ6Xy-eIucmNuY2SQCNcBGAsYHQ/s1600/pose_pien_uruuru_man.png"
+            require('@/assets/thumbnail.png')
         },
         {
           id: 2,
-          name: "やまだたろう",
+          name: "たなか たろう",
           text: "晩御飯食べたい",
           image_url:
-            "https://1.bp.blogspot.com/-jlZlCg-8FAM/Xub_u8HTD1I/AAAAAAABZis/ZhUI05AZBEQpVinedZ6Xy-eIucmNuY2SQCNcBGAsYHQ/s1600/pose_pien_uruuru_man.png"
+            require('@/assets/thumbnail.png')
         },
         {
           id: 3,
-          name: "じょぶ",
+          name: "たなか たろう",
           text: "晩御飯食べたい",
           image_url:
-            "https://1.bp.blogspot.com/-jlZlCg-8FAM/Xub_u8HTD1I/AAAAAAABZis/ZhUI05AZBEQpVinedZ6Xy-eIucmNuY2SQCNcBGAsYHQ/s1600/pose_pien_uruuru_man.png"
+            require('@/assets/thumbnail.png')
         },
         {
           id: 4,
-          name: "ただ たけひろ",
+          name: "たなか たろう",
           text: "晩御飯食べたい",
           image_url:
-            "https://1.bp.blogspot.com/-jlZlCg-8FAM/Xub_u8HTD1I/AAAAAAABZis/ZhUI05AZBEQpVinedZ6Xy-eIucmNuY2SQCNcBGAsYHQ/s1600/pose_pien_uruuru_man.png"
+            require('@/assets/thumbnail.png')
         },
         {
           id: 5,
-          name: "ただ たけひろ",
+          name: "たなか たろう",
           text: "晩御飯食べたい",
           image_url:
-            "https://1.bp.blogspot.com/-jlZlCg-8FAM/Xub_u8HTD1I/AAAAAAABZis/ZhUI05AZBEQpVinedZ6Xy-eIucmNuY2SQCNcBGAsYHQ/s1600/pose_pien_uruuru_man.png"
+            require('@/assets/thumbnail.png')
+        },
+        {
+          id: 6,
+          name: "たなか たろう",
+          text: "晩御飯食べたい",
+          image_url:
+            require('@/assets/thumbnail.png')
+        },
+        {
+          id: 7,
+          name: "たなか たろう",
+          text: "晩御飯食べたい",
+          image_url:
+            require('@/assets/thumbnail.png')
+        },
+        {
+          id: 7,
+          name: "たなか たろう",
+          text: "晩御飯食べたい",
+          image_url:
+            require('@/assets/thumbnail.png')
+        },
+        {
+          id: 8,
+          name: "たなか たろう",
+          text: "晩御飯食べたい",
+          image_url:
+            require('@/assets/thumbnail.png')
         }
       ]
     };
@@ -65,7 +93,6 @@ export default {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 </style>

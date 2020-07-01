@@ -21,10 +21,11 @@ export default {
 .signup-box {
   height: 100vh;
   width: 100vw;
-  background-color: #242424;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 102px;
 }
 
 .name {
@@ -37,6 +38,10 @@ export default {
   font-size: 17px;
 }
 
+.name:focus {
+  outline: none;
+}
+
 .mail {
   height: 50px;
   width: 600px;
@@ -44,6 +49,10 @@ export default {
   margin-bottom: 30px;
   border-radius: 10px;
   font-size: 17px;
+}
+
+.mail:focus {
+  outline: none;
 }
 
 .pass {
@@ -55,6 +64,10 @@ export default {
   font-size: 17px;
 }
 
+.pass:focus {
+  outline: none;
+}
+
 .signup {
   height: 50px;
   width: 600px;
@@ -62,5 +75,13 @@ export default {
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
+}
+
+.siguup:focus {
+  outline: none;
+}
+
+.signup:hover {
+  opacity: 0.7;
 }
 </style>

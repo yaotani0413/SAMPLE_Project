@@ -22,13 +22,15 @@ export default {
 .profile-box {
   height: 100vh;
   width: 100vw;
-  background-color: #242424;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 102px;
 }
 
 .profile-edit {
+  margin-top: 50px;
   margin-bottom: 50px;
   color: #FFCD28;
   font-weight: bold;
@@ -44,6 +46,10 @@ export default {
   font-size: 17px;
 }
 
+.name:focus {
+  outline: none;
+}
+
 .mail {
   height: 50px;
   width: 600px;
@@ -51,6 +57,10 @@ export default {
   margin-bottom: 30px;
   border-radius: 10px;
   font-size: 17px;
+}
+
+.mail:focus {
+  outline: none;
 }
 
 .pass {
@@ -62,6 +72,10 @@ export default {
   font-size: 17px;
 }
 
+.pass:focus {
+  outline: none;
+}
+
 .update {
   height: 45px;
   width: 150px;
@@ -69,5 +83,13 @@ export default {
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
+}
+
+.update:focus {
+  outline: none;
+}
+
+.update:hover {
+  opacity: 0.7;
 }
 </style>

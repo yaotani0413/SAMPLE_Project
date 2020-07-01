@@ -29,6 +29,10 @@ export default {
 .main {
   display: flex;
   flex-direction: column;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  background-color: #242424;
+  min-height: 100vh;
+  background-image: url(~@/assets/background.jpeg);
 }
 
 // .footer {

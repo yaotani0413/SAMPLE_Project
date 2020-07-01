@@ -20,13 +20,15 @@ export default {
 .newpost {
   height: 100vh;
   width: 100vw;
-  background-color: #242424;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 102px;
 }
 
 .newpost-title {
+  margin-top: 50px;
   margin-bottom: 50px;
   color: #ffcd28;
   font-weight: bold;
@@ -42,6 +44,10 @@ export default {
   font-size: 17px;
 }
 
+.newpost-message:focus {
+  outline: none;
+}
+
 .btn {
   background-color: #ffcd28;
   height: 45px;
@@ -49,5 +55,18 @@ export default {
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.newpost-message::placeholder {
+  text-align: center;
+  line-height: 250px;
 }
 </style>

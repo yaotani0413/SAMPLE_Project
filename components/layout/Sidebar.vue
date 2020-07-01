@@ -1,9 +1,9 @@
 <template>
-  <nav class="sidebar">
-    <button type="button" class="menu-button" @click="goProfile">プロフィール編集</button>
-    <button type="button" class="menu-button" @click="goNewpost">新規投稿</button>
-    <button type="button" class="menu-button" @click="returnTop">ログアウト</button>
-  </nav>
+    <nav class="sidebar">
+      <button type="button" class="menu-button" @click="goProfile">プロフィール編集</button>
+      <button type="button" class="menu-button" @click="goNewpost">新規投稿</button>
+      <button type="button" class="menu-button" @click="returnTop">ログアウト</button>
+    </nav>
 </template>
 
 <script>
@@ -29,6 +29,9 @@ export default {
   flex-direction: column;
   align-items: center;
   border-right: 2px solid #ffcd28;
+  position: fixed;
+  min-height: 100vh;
+  background-color: #242424;
 }
 
 .menu-button {
@@ -40,4 +43,13 @@ export default {
   margin-top: 25px;
   cursor: pointer;
 }
+
+.menu-button:focus {
+  outline: none;
+}
+
+.menu-button:hover {
+  opacity: 0.7;
+}
+
 </style>

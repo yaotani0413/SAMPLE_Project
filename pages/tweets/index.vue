@@ -26,7 +26,7 @@ export default {
 }
 
 .sidebar-width {
-  padding: 225px;
+  padding: 200px;
 }
 
 .tweet-screen {

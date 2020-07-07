@@ -1,8 +1,18 @@
 <template>
   <header class="header">
-      <h1 class="header__title">SNS的なやつ(仮)</h1>
+      <h1 class="header__title" @click="goTimeline">Let's mutter.</h1>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    goTimeline() {
+      this.$router.push('/tweets')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .header {
@@ -11,17 +21,19 @@
   top: 0px;
   width: 100vw;
   height: 100px;
-  background-color: #242424;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  border-bottom: 2px solid #ffcd28;
 }
 
 .header__title {
-  border-bottom: 2px solid #ffcd28;
   margin: 0;
-  width: 100%;
   text-align: center;
   line-height: 100px;
-  color: #ffcd28;
-  font-size: 40px;
+  font-size: 70px;
   font-weight: bold;
+  color: #FF7C00;
+  background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

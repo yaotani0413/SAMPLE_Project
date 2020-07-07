@@ -33,7 +33,7 @@ export default {
   width: 600px;
   text-align: center;
   margin-top: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
   font-size: 17px;
 }
@@ -46,7 +46,7 @@ export default {
   height: 50px;
   width: 600px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
   font-size: 17px;
 }
@@ -59,7 +59,7 @@ export default {
   height: 50px;
   width: 600px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
   font-size: 17px;
 }
@@ -71,7 +71,7 @@ export default {
 .signup {
   height: 50px;
   width: 600px;
-  background-color: #FFCD28;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
@@ -83,5 +83,9 @@ export default {
 
 .signup:hover {
   opacity: 0.7;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 </style>

@@ -1,95 +1,83 @@
 <template>
-  <div class="profile-box">
-      <p class="profile-edit">プロフィール編集</p>
-    <input type="text" class="name" placeholder="ニックネーム">
-    <input type="email" class="mail" placeholder="メールアドレス">
-    <input type="password" class="pass" placeholder="パスワード">
-    <button type="button" class="update" @click="goTimeline">更新</button>
+  <div class="profile">
+    <div class="profile__thumbnail"><img src="@/assets/thumbnail.png" alt="サムネイル" class="image"/></div>
+    <div class="user-name"></div>
+    <div class="introduce"></div>
+    <button class="profile_edit" @click="goprofileedit">編集</button>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    goTimeline() {
-      this.$router.push('/tweets')
+    goprofileedit() {
+      this.$router.push('/user/profileedit')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.profile-box {
+.profile {
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   position: fixed;
-  top: 102px;
+  align-items: center;
 }
 
-.profile-edit {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: #FFCD28;
-  font-weight: bold;
-  font-size: 60px;
-}
-
-.name {
-  height: 50px;
-  width: 600px;
-  text-align: center;
+.profile__thumbnail {
+  background-color: white;
+  width: 350px;
+  height: 350px;
   margin-bottom: 30px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-name {
+  background-color: white;
+  height: 50px;
+  width: 300px;
   border-radius: 10px;
   font-size: 17px;
+  margin-bottom: 20px;
 }
 
-.name:focus {
-  outline: none;
-}
-
-.mail {
-  height: 50px;
+.introduce {
+  background-color: white;
+  height: 200px;
   width: 600px;
-  text-align: center;
-  margin-bottom: 30px;
   border-radius: 10px;
-  font-size: 17px;
+  margin-bottom: 20px;
 }
 
-.mail:focus {
-  outline: none;
-}
-
-.pass {
-  height: 50px;
-  width: 600px;
-  text-align: center;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  font-size: 17px;
-}
-
-.pass:focus {
-  outline: none;
-}
-
-.update {
+.profile_edit {
   height: 45px;
   width: 150px;
-  background-color: #FFCD28;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
 }
 
-.update:focus {
+.profile_edit:focus {
   outline: none;
 }
-
-.update:hover {
+.profile_edit:hover {
   opacity: 0.7;
 }
+
+
 </style>

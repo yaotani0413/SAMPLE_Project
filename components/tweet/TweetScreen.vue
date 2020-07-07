@@ -1,5 +1,5 @@
 <template>
-  <div class="infinite-scroll">
+  <div class="main">
     <tweet
       v-for="tweet in tweets"
       :key="tweet.id"
@@ -7,12 +7,6 @@
       :text="tweet.text"
       :image-url="tweet.image_url"
     />
-    <infinite-loading 
-      ref="infiniteLoading" 
-      spinner="spiral"
-      @infinite="infiniteHandler">
-      <div slot="no-results"/>
-    </infinite-loading>
   </div>
 </template>
 
@@ -20,7 +14,6 @@
 import Tweet from "@/components/tweet/Tweet.vue";
 
 export default {
-  name: 'InfiniteScroll',
   components: {
     Tweet
   },
@@ -100,7 +93,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.infinite-scroll {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;

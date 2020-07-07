@@ -1,6 +1,5 @@
 <template>
   <div class="newpost">
-    <p class="newpost-title">新規投稿</p>
     <textarea class="newpost-message" placeholder="メッセージを入力" cols="10" rows="5"></textarea>
     <button type="button" class="btn" @click="goTimeline">投稿</button>
   </div>
@@ -42,6 +41,7 @@ export default {
   border-radius: 50px;
   margin-bottom: 50px;
   font-size: 17px;
+  margin-top: 200px;
 }
 
 .newpost-message:focus {
@@ -49,7 +49,7 @@ export default {
 }
 
 .btn {
-  background-color: #ffcd28;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
   height: 45px;
   width: 150px;
   border-radius: 10px;
@@ -68,5 +68,9 @@ export default {
 .newpost-message::placeholder {
   text-align: center;
   line-height: 250px;
+}
+
+.newpost-message:focus::placeholder {
+  color: transparent;
 }
 </style>
